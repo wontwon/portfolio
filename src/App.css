@@ -1,0 +1,24 @@
+.App {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.App-logo {
+  // animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  display: flex;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+  height: 300px;
+  padding: 20px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(360deg); }
+}
