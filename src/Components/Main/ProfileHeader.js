@@ -10,7 +10,7 @@ const ProfileHeader = () => {
 					<img alt="profileImage" src={profilePic} className="ProfileHeader-image" />
 				</div>
 				<div className="ProfileHeader-badge-details">
-					<div style={{fontWeight: "bold"}}>Tuan Duong</div>
+					<div style={{fontWeight: "400"}}>Tuan Duong</div>
 					<div style={{fontWeight: "100", paddingTop: 5, color: '#B3B3B3', fontSize: 15}}>
 						Full-Stack Software Developer
 					</div>
