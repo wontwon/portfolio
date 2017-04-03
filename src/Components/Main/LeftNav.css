@@ -1,0 +1,25 @@
+.LeftNav-container {
+	display: flex;
+	width: 15em;
+	height: 100%;
+	z-depth: 1000;
+	margin-left: -15em;
+
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	transition: 0.5s;
+}
+
+
+.LeftNav-container.show {
+	margin-left: 0em;
+}
+
+
+.LeftNav-bar {
+	position: fixed;
+	width: 15em;
+	height: 100%;
+	background-color: grey;
+}

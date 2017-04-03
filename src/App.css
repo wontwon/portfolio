@@ -1,21 +1,35 @@
 .App {
   display: flex;
-  flex: 1;
-  flex-direction: column;
+  flex-direction: row;
 }
 
-.App-logo {
-  // animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
+.App-left-nav-container {
   display: flex;
-  justify-content: top;
+  width: 15em;
+  height: 100%;
+  z-depth: 1000;
+  margin-left: -15em;
+}
+
+.App-main-container {
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.App-navbar {
+  display: flex;
   align-items: center;
   flex-direction: column;
-  height: 300px;
   padding: 20px;
+}
+
+.App-stack-button {
+  position: relative;
+  left: 20px;
+  top: 50px;
 }
 
 @keyframes App-logo-spin {
