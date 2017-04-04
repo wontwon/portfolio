@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './images/td-logo.png'
 import ProfileHeader from './Components/Main/ProfileHeader'
 import LeftNav from './Components/Main/LeftNav'
 
@@ -10,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showMenu: false
+      showMenu: true
     }
   }
 
