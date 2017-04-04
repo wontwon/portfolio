@@ -31,8 +31,3 @@
   left: 20px;
   top: 50px;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(360deg); }
-  to { transform: rotate(360deg); }
-}
