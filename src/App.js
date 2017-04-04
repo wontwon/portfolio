@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
 import {
-  BrowserRouter as Router
+  BrowserRouter as Router,
 } from 'react-router-dom'
+import Routes from './Routes'
 
 import LeftNav from './Components/Shared/LeftNav'
-import AppRouter from './Router'
-
 import './App.css';
 
 class App extends Component {
@@ -41,7 +40,7 @@ class App extends Component {
           <LeftNav show={showMenu}/>
           <div className="App-main-container">
             { this._renderMenuButton() }
-            <AppRouter />
+            <Routes />
           </div>
         </div>
       </Router>
