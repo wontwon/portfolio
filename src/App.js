@@ -1,7 +1,10 @@
-import React, { Component } from 'react';
-import ProfileHeader from './Components/Main/ProfileHeader'
-import LeftNav from './Components/Main/LeftNav'
+import React, { Component } from 'react'
+import {
+  BrowserRouter as Router
+} from 'react-router-dom'
 
+import LeftNav from './Components/Shared/LeftNav'
+import AppRouter from './Router'
 
 import './App.css';
 
@@ -33,15 +36,15 @@ class App extends Component {
     const { showMenu } = this.state
 
     return (
-      <div className="App">
-        <LeftNav show={showMenu}/>
-        <div className="App-main-container">
-          { this._renderMenuButton() }
-          <div className="App-header">
-            <ProfileHeader />
+      <Router>
+        <div className="App">
+          <LeftNav show={showMenu}/>
+          <div className="App-main-container">
+            { this._renderMenuButton() }
+            <AppRouter />
           </div>
         </div>
-      </div>
+      </Router>
     );
   }
 }
