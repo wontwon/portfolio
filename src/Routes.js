@@ -16,8 +16,8 @@ const Routes = ({location}) => (
 	<div>
 		<ReactCSSTransitionGroup
 		transitionName="fade"
-		transitionEnterTimeout={300}
-		transitionLeaveTimeout={300}
+		transitionEnterTimeout={500}
+		transitionLeaveTimeout={500}
 		>
 			<Switch location={location} key={location.pathname}>
 				<Route exact path="/" component={Home} />

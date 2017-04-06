@@ -33,11 +33,20 @@
 }
 
 .fade-enter {
-  opacity: 0;
-  z-index: 1;
+  opacity: 0.00;
 }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease-in;
+  transition: 1000ms;
+}
+
+.fade-leave {
+  visibility: hidden;
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.00;
+  transition: opacity 300ms;
 }
