@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import {
-  BrowserRouter as Router,
-} from 'react-router-dom'
 import Routes from './Routes'
+import {
+  withRouter 
+} from 'react-router-dom'
 
 import LeftNav from './Components/Shared/LeftNav'
 import './App.css';
@@ -12,6 +12,14 @@ class App extends Component {
     super(props);
     this.state = {
       showMenu: true
+    }
+  }
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.location !== this.props.location) {
+      this.setState({
+        showMenu: false
+      })
     }
   }
 
@@ -35,7 +43,6 @@ class App extends Component {
     const { showMenu } = this.state
 
     return (
-      <Router>
         <div className="App">
           <LeftNav show={showMenu}/>
           <div className="App-main-container">
@@ -43,9 +50,8 @@ class App extends Component {
             <Routes />
           </div>
         </div>
-      </Router>
     );
   }
 }
 
-export default App;
+export default withRouter(App)
