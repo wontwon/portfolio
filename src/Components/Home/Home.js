@@ -1,4 +1,6 @@
 import React from 'react'
+import Links from '../Shared/Links'
+
 import profilePic from '../../images/profile.jpg'
 import './Home.css';
 
@@ -27,6 +29,8 @@ const Home = () => {
 					Have a look at some of my projects when you get a chance. Learn more about me and then consider hiring me. Thanks!
 				</div>
 			</div>
+
+			<Links />
 
 		</div>
 	)
