@@ -27,6 +27,7 @@
 }
 
 .App-stack-button {
+  display: inline-block;
   position: relative;
   left: 20px;
   top: 50px;
@@ -38,7 +39,7 @@
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: 1000ms;
+  transition: opacity 1000ms 100ms;
 }
 
 .fade-leave {
@@ -48,5 +49,5 @@
 
 .fade-leave.fade-leave-active {
   opacity: 0.00;
-  transition: opacity 300ms;
+  transition: opacity 200ms;
 }
