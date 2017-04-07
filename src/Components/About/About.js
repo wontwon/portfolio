@@ -7,9 +7,11 @@ const About = () => (
 	<div className="About-container">
 		<div className="About-content">
 			<div>Picture</div>
-			<div>
+			<br />
+			<div className="About-content-text">
 				Hi! I'm a developer living in Seattle, WA that takes pride in writing clean maintainble code 
-				and building beautiful interfaces. My tools of choice right now are ReactJS and Node.
+				and building beautiful interfaces. My tools of choice right now are ReactJS, VueJS and Node, 
+				but I'm always open to learning something new.			
 			</div>
 			<br />
 			<div>What's been going on for me lately?</div>

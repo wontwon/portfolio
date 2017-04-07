@@ -11,4 +11,11 @@
 	flex-direction: column;
 	width: 600px;
 	height: auto;
+	color: gray;
+	font-weight: 100;
+	line-height: 1.4;
+}
+
+.About-content-text {
+	
 }
