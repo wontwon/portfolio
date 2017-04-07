@@ -1,0 +1,14 @@
+.About-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.About-content {
+	display: flex;
+	flex-direction: column;
+	width: 600px;
+	height: auto;
+}
