@@ -1,14 +1,13 @@
 .LeftNav-container {
 	display: flex;
-	height: 100%;
 	margin-left: -15em;
 	width: 15em;
 	z-depth: 1000;
 
-	-webkit-transition: 0.5s;
-	-moz-transition: 0.5s;
-	-o-transition: 0.5s;
-	transition: 0.5s;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
 }
 
 .LeftNav-container.show {
